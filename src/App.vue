@@ -7,7 +7,8 @@
     <router-link to="/databinding/input">Input</router-link> |
     <router-link to="/databinding/select">Select</router-link> |
     <router-link to="/databinding/check">Check</router-link> |
-    <router-link to="/databinding/radio">Radio</router-link>
+    <router-link to="/databinding/radio">Radio</router-link> |
+    <router-link to="/databinding/attr">Attribute</router-link>
   </nav>
   <router-view />
 </template>
