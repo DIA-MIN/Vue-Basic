@@ -17,6 +17,46 @@ const routes = [
 
     // 방법3. => size가 크면서 사용자가 컴포넌트 사용할 가능성이 큰 경우. (webpackPrefetch)
     // webpackPrefetch: true => 브라우저 캐시에 저장하겠다. 확실히 사용할 컴포넌트이면서, 파일 크기가 클 경우만 사용하기!
+  },
+  {
+    path: '/databinding/string',
+    name: 'DataBindingStringView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/1_databinding/DataBindingStringView.vue'
+      )
+  },
+  {
+    path: '/databinding/html',
+    name: 'DataBindingHtmlView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/1_databinding/DataBindingHtmlView.vue'
+      )
+  },
+  {
+    path: '/databinding/input',
+    name: 'DataBindingInputView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/1_databinding/DataBindingInputView.vue'
+      )
+  },
+  {
+    path: '/databinding/select',
+    name: 'DataBindingSelectView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/1_databinding/DataBindingSelectView.vue'
+      )
+  },
+  {
+    path: '/databinding/check',
+    name: 'DataBindingCheckBoxView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch: true */ '../views/1_databinding/DataBindingCheckBoxView.vue'
+      )
   }
 ]
 
